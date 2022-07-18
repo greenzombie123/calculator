@@ -1,0 +1,68 @@
+html *{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+/*Caculator Container*/
+
+.calculatorContainer{
+    border: 1px solid black;
+    margin: 50px auto 0;
+    width: 20vw;
+    height: 60vh;
+    padding: 40px 20px 20px;
+}
+
+.display{
+    height: 20%;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.keypadContainer{
+    /* border: 1px solid black; */
+    display: grid;
+    height: 70%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.keypadContainer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.keypadContainer div:nth-child(-n+4){
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.keypadContainer div:nth-child(n+5):nth-child(-n+8){
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.keypadContainer div:nth-child(n+9):nth-child(-n+12){
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.keypadContainer div:nth-child(n+13):nth-child(-n+16){
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.keypadContainer div:nth-child(n+17):nth-child(-n+20){
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.keypadContainer div:nth-child(4n+1){
+    border-left: 1px solid black;
+}
